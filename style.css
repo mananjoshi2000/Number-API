@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    height: 80px;
+}
+
+h1{
+    font-family: 'Kaushan Script', cursive;
+}
+
+.s1{
+    max-width: 150px;
+    padding: 0;
+    text-align: center;
+}
+
+body{
+    background-color:black;  
+}
+
+.text-center{
+    margin: auto;
+    padding: 50px;
+    color: white;
+}
+
+.img{
+    height: 233px;
+    width: 300px;
+}
+
+label{
+    height: 48px;
+    /* font-size: 20px; */
+}
+
+#mathematics{
+    background-image: url("math2.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#trivia{
+    background-image: url("trivia5.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#year{
+    background-image: url("year.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text{
+    text-align: center;
+    font-size: 20px;
+    font-family: serif;
+    color: sandybrown;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) { 
+    .navbar{
+        background-color: red;
+    }
+ }
+
