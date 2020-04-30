@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Numbers</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -11,24 +11,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="navbar">
-      <div class="col s3">
+  <div class="container-fluid" style="margin: 0px;">
+    <div class="mob-head">
+      <h1 style="text-align: center;">Numbers API</h1>
+    </div>
+    <div class="row nav">
+      <div class="col-sm-8">
         <h1>Numbers API</h1>
       </div>
-      <div class="col s1">
+      <div class="col-sm-1">
         <button class="btn btn-dark">Home</button>
       </div>
-      <div class="col s1">
+      <div class="col-sm-1">
         <button class="btn btn-dark">Gallery</button>
       </div>
-      <div class="col s1">
+      <div class="col-sm-1">
         <button class="btn btn-dark">Contact</button>
       </div>
-      <div class="col s1">
+      <div class="col-sm-1">
         <button class="btn btn-dark">Details</button>
       </div>
     </div>  
-
+  </div>
   <div class="container text-center">
     <p style="font-family: cursive; color: wheat; font-size: 20px">
       You got a thing for numbers?<br>
@@ -36,11 +40,11 @@
     </p>
   </div>
 
-  <div class="container" style="350px;">
+  <div class="container">
    <div class="row">
-    <div class="col-4" style="padding-left: 40px;">
+    <div class="col-4" style="padding-left: 40px; margin: auto;">
       <label style="color: white; width: 100%;">Enter a number to get random mathematical fact about it :</label>
-      <div id="mathematics" style="width: 300px; height: 233px;">
+      <div id="mathematics">
         <div class="text text-math" style="width: 300px; height: 233px;">
           
         </div>
@@ -56,9 +60,9 @@
       </div>
     </div>
 
-    <div class="col-4" style="padding-left: 40px;">
+    <div class="col-4" style="padding-left: 40px; margin: auto;">
       <label style="color: white; width: 100%;">Enter any number & get fun-trivia about it :</label>
-      <div id="trivia" style="width: 300px; height: 233px;">
+      <div id="trivia">
         <div class="text text-trivia" style="width: 300px; height: 233px;">
           
         </div>
@@ -74,9 +78,9 @@
       </div>
     </div>
     
-    <div class="col-4" style="padding-left: 40px;">
+    <div class="col-4" style="padding-left: 40px; margin: auto;">
       <label style="color: white; width: 100%;">Enter a year & get a fact about it :</label>
-      <div id="year" style="width: 300px; height: 233px;">
+      <div id="year">
         <div class="text text-year" style="width: 300px; height: 233px;">
           
         </div>
@@ -91,15 +95,8 @@
         </div> 
       </div>
     </div>
-
    </div>  
   </div>
-
-
-
-
-  
-
 
   <script src="app.js"></script>
 </body>

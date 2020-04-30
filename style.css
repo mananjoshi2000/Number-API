@@ -3,7 +3,9 @@
     padding: 0px;
 }
 
-.navbar{
+.container-fluid{
+    padding-top: 15px;
+    margin: auto;
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
     height: 80px;
@@ -11,10 +13,11 @@
 
 h1{
     font-family: 'Kaushan Script', cursive;
+    margin: auto;
+    padding-left: 20px;
 }
 
-.s1{
-    max-width: 150px;
+.col-sm-1{
     padding: 0;
     text-align: center;
 }
@@ -29,14 +32,8 @@ body{
     color: white;
 }
 
-.img{
-    height: 233px;
-    width: 300px;
-}
-
 label{
     height: 48px;
-    /* font-size: 20px; */
 }
 
 #mathematics{
@@ -54,7 +51,7 @@ label{
 }
 
 #year{
-    background-image: url("year.jpg");
+    background: url("year.jpg");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -68,9 +65,28 @@ label{
     padding: 20px;
 }
 
-@media only screen and (max-width: 600px) { 
-    .navbar{
-        background-color: red;
+/* Mobile */
+
+.mob-head{
+    display: none;
+}
+
+/* Responsive */
+
+@media(max-width: 874px) { 
+    .nav{
+        height: 104px;
     }
+}
+
+@media(max-width: 400px) { 
+    .nav{
+        display: none;
+    }
+    .mob-head{
+        display: block;
+    }
+
+
  }
 
