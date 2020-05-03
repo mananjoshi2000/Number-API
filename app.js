@@ -54,3 +54,18 @@ year_btn.addEventListener('click',()=>{
     .catch((err)=>alert(err))
 });
 
+var flag = 0;
+
+document.querySelector('.mob-menu').addEventListener('click',()=>{
+    if(flag==0)
+    {
+        document.querySelector('.drop-menu').style.display = 'block';
+        flag=1;
+    }
+    else
+    {
+        document.querySelector('.drop-menu').style.display = 'none';
+        flag=0; 
+    }
+
+    })

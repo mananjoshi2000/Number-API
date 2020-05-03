@@ -6,7 +6,7 @@
 .container-fluid{
     padding-top: 15px;
     margin: auto;
-    background-color: green;
+    background-color:  rgba(53, 209, 22, 0.658);
     color: white;
     height: 80px;
 }
@@ -75,6 +75,21 @@ label{
     display: none;
 }
 
+ul li{
+    list-style: none;
+    color: white;
+    background-color: black;
+    height: 40px;
+    padding-left:80px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 5px;
+}
+
+ul li:hover{
+    background-color: rgba(53, 209, 22, 0.658);
+}
+
 /* Responsive */
 
 @media(max-width: 874px) { 
@@ -83,7 +98,7 @@ label{
     }
 }
 
-@media(max-width: 400px) { 
+@media(max-width: 600px) { 
     .nav{
         display: none;
     }
@@ -97,4 +112,3 @@ label{
         display: block;
     }
 }
-
