@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Numbers</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container-fluid" style="margin: 0px;">
+    <div class="mob-head">
+      <h1 style="float: left;"><button style="background-color: transparent; border: 0px;" class="mob-menu"><i class="fa fa-bars" style="color: white;"></i></button></h1>
+      <h1 style="text-align: center;">Numbers API</h1>
+    </div>
+    <div class="row nav">
+      <div class="col-sm-8">
+        <h1>Numbers-API</h1>
+      </div>
+      <div class="col-sm-1">
+        <button class="btn btn-dark">Home</button>
+      </div>
+      <div class="col-sm-1">
+        <button class="btn btn-dark">Gallery</button>
+      </div>
+      <div class="col-sm-1">
+        <button class="btn btn-dark">Contact</button>
+      </div>
+      <div class="col-sm-1">
+        <button class="btn btn-dark">About</button>
+      </div>
+    </div>  
+  </div>
+  <div class="drop-menu" style="display: none;">
+    <ul>
+      <li>Home</li>
+      <li>Gallery</li>
+      <li>Contact</li>
+      <li>About</li>
+    </ul>
+  </div>
+  <div class="container text-center">
+    <p style="font-family: cursive; color: wheat; font-size: 20px">
+      You got a thing for numbers?<br>
+      We got a thing for you!
+    </p>
+  </div>
+<div class="web">
+  <div class="container">
+   <div class="row">
+    <div class="col-4" style="padding-left: 40px; margin: auto;">
+      <label style="color: white; width: 100%;">Enter a number to get random mathematical fact about it :</label>
+      <div id="mathematics">
+        <div class="text text-math" style="width: 300px; height: 233px;">
+          
+        </div>
+      </div>
+      <hr style="size: 2px;"> 
+      <div class="form-group">
+        <div class="row" style="margin-left: 0;">
+          <input type="text" class="form-control" style="width: 70%;" value="" placeholder="Number" id="math-input">
+          <button type="submit" style="width: 20%;margin-left: 7px;" class="col-2" id="math-btn">
+            <i class="fa fa-arrow-right"></i>
+          </button>
+        </div>  
+      </div>
+    </div>
+
+    <div class="col-4" style="padding-left: 40px; margin: auto;">
+      <label style="color: white; width: 100%;">Enter any number & get fun-trivia about it :</label>
+      <div id="trivia">
+        <div class="text text-trivia" style="width: 300px; height: 233px;">
+          
+        </div>
+      </div>
+      <hr style="size: 2px;"> 
+      <div class="form-group">
+        <div class="row" style="margin-left: 0;">
+          <input type="text" class="form-control" style="width: 70%;" value="" placeholder="Number" id="trivia-input">
+          <button type="submit" style="width: 20%;margin-left: 7px;" class="col-2" id="trivia-btn">
+            <i class="fa fa-arrow-right"></i>
+          </button>
+        </div> 
+      </div>
+    </div>
+    
+    <div class="col-4" style="padding-left: 40px; margin: auto;">
+      <label style="color: white; width: 100%;">Enter a year & get a fact about it :</label>
+      <div id="year">
+        <div class="text text-year" style="width: 300px; height: 233px;">
+          
+        </div>
+      </div>
+      <hr style="size: 2px;"> 
+      <div class="form-group">
+        <div class="row" style="margin-left: 0;">
+          <input type="text" class="form-control" style="width: 70%;" value="" placeholder="Year" id="year-input">
+          <button type="submit" style="width: 20%;margin-left: 7px;" class="col-2" id="year-btn">
+            <i class="fa fa-arrow-right"></i>
+          </button>
+        </div> 
+      </div>
+    </div>
+   </div>  
+  </div>  
+</div>
+
+
+<!-- Responsive -->
+
+<div class="container mob-main" style="padding-left: 40px; padding-right: 40px;">
+    <label style="color: white; font-size: 20px;">Enter a number to get random mathematical fact about it :</label>
+      <hr>
+    <div id="mathematics">
+      <div class="text text-math" style="width: 300px; height: 233px;">
+        
+      </div>
+    </div>
+    <hr style="size: 2px;"> 
+    <div class="form-group">
+      <div class="row" style="margin-left: 0;">
+        <input type="text" class="form-control" style="width: 70%;" value="" placeholder="Number" id="math-input">
+        <button type="submit" style="width: 20%;margin-left: 7px;" class="col-2" id="math-btn">
+          <i class="fa fa-arrow-right"></i>
+        </button>
+      </div>  
+    </div>
+
+    <hr>
+    <hr style="border-color: white; size: 2px;">
+    <hr>
+    
+    <label style="color: white; font-size: 20px;">Enter any number & get fun-trivia about it :</label>
+      <hr>
+    <div id="trivia">
+      <div class="text text-trivia" style="width: 300px; height: 233px;">
+        
+      </div>
+    </div>
+    <hr style="size: 2px;"> 
+    <div class="form-group">
+      <div class="row" style="margin-left: 0;">
+        <input type="text" class="form-control" style="width: 70%;" value="" placeholder="Number" id="trivia-input">
+        <button type="submit" style="width: 20%;margin-left: 7px;" class="col-2" id="trivia-btn">
+          <i class="fa fa-arrow-right"></i>
+        </button>
+      </div> 
+    </div> 
+    
+    <hr>
+    <hr style="border-color: white; size: 2px;">
+    <hr>
+    
+    <label style="color: white; font-size: 20px;">Enter a year & get a fact about it :</label>
+      <div id="year">
+        <div class="text text-year" style="width: 300px; height: 233px;">
+          
+        </div>
+      </div>
+      <hr style="size: 2px;"> 
+      <div class="form-group">
+        <div class="row" style="margin-left: 0;">
+          <input type="text" class="form-control" style="width: 70%;" value="" placeholder="Year" id="year-input">
+          <button type="submit" style="width: 20%;margin-left: 7px;" class="col-2" id="year-btn">
+            <i class="fa fa-arrow-right"></i>
+          </button>
+        </div> 
+      </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
